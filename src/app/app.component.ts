@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  place: any;
+  logAddress($event) {
+    console.log($event);
+    this.place = $event;
+  }
 }
